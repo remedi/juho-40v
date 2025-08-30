@@ -1,21 +1,31 @@
 #root {
+  height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1.4em;
+  padding-bottom: 1.5em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
 }
 
 @keyframes logo-spin {
@@ -34,9 +44,12 @@
 }
 
 .card {
-  padding: 2em;
+  font-size: 2em;
+  padding: 1em;
 }
 
 .read-the-docs {
-  color: #888;
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: black;
 }
